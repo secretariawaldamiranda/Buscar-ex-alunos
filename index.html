@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Consulta de registros de ex-alunos de 2000 a 2025, com filtros por ano e busca por nomes semelhantes.">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<title>Busca de ex-alunos · 2000–2025</title>
+<link rel="stylesheet" href="./styles.css"></head>
+<body><main><header><div><div class="eyebrow">Arquivo escolar · 2000 a 2025</div><h1>Encontre um ex-aluno</h1><p>Pesquise pelo nome ou por parte dele. A busca ignora acentos, aceita palavras em outra ordem e sugere grafias próximas.</p></div><span class="offline">Funciona sem internet</span></header>
+<section class="box" aria-label="Pesquisa"><form id="searchForm"><label>Nome ou parte do nome<input id="query" type="search" placeholder="Ex.: nome e sobrenome" autocomplete="off"></label><label>Ano da lista<select id="year"><option value="">Todos os anos</option></select></label><button class="primary" type="submit">Buscar</button></form><div class="settings"><label class="check"><input id="reviewOnly" type="checkbox">Somente registros com sugestão de conferência</label><label class="sort">Ordenar por<select id="sort"><option value="relevance">Relevância</option><option value="name">Nome</option><option value="year">Ano</option></select></label></div><p class="help">6.873 registros · 26 anos · 141 páginas. Os nomes estão como no PDF. Sugestões não confirmam a identidade de uma pessoa.</p></section>
+<div class="summary"><div id="resultCount" role="status" aria-live="polite"></div><div id="queryHint"></div></div>
+<div class="table-wrap"><table><caption class="sr">Resultados da consulta de ex-alunos</caption><thead><tr><th>Nome original e registro</th><th>Ano</th><th>Local no PDF</th><th>Conferência inicial</th></tr></thead><tbody id="rows"></tbody></table></div>
+<nav class="pager" aria-label="Páginas dos resultados"><button id="prev" type="button">Anterior</button><span id="pageLabel"></span><button id="next" type="button">Próxima</button></nav>
+<details><summary>Como interpretar os resultados</summary><p>A página e o número original indicam onde localizar cada registro no PDF <strong>Ex-alunos 2000-2025.pdf</strong>. Os nomes estão como no texto extraído desse documento e podem conter erros de digitalização.</p><p>A conferência inicial reúne nomes iguais no mesmo ano, nomes muito parecidos, possíveis trocas entre I/l/1 ou O/0 e palavras em outra ordem. As comparações usam regras conservadoras e não detectam todos os erros. Nomes iguais em anos diferentes são informativos e não entram, por si só, no filtro de sugestões de conferência.</p><p>Confira o documento ou a imagem original antes de alterar nomes ou unir cadastros. O ano corresponde ao cabeçalho da lista, sem presumir que seja o ano de conclusão. IDs identificam entradas da lista; nomes iguais não confirmam que se trata da mesma pessoa.</p></details>
+<footer>Preparado em 22/10/2026 a partir do PDF fornecido. A pesquisa é feita no seu navegador, sem enviar o termo pesquisado a um servidor.</footer><noscript><p class="box">Ative o JavaScript do navegador para consultar a lista.</p></noscript></main>
+
+<script src="./dados.js" defer></script>
+<script src="./app.js" defer></script></body></html>

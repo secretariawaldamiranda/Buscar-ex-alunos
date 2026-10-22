@@ -1,0 +1,12 @@
+# Arquivos locais e documentos de trabalho
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.zip
+*.xlsx
+*.pdf
+node_modules/
+.env
+.env.*
+!.env.example
